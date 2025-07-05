@@ -1,0 +1,210 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Roboto', Helvetica, sans-serif;
+    color: #003366;
+}
+
+header {
+    background-color: #003366;
+    color: white;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+#course-title {
+    display: block;
+    font-size: 1.8em;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+main {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 0;
+    color: #004d99;
+}
+
+.cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 25px;
+}
+
+@media (min-width: 768px) {
+    .cards-container {
+        grid-template-columns: 2fr 1fr;
+    }
+}
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    padding: 25px;
+}
+
+.card h2 {
+    background-color: #003366;
+    color: white;
+    padding: 10px;
+    margin: -25px -25px 20px -25px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    text-align: center;
+}
+
+.card .content-wrapper {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+.card .text-content {
+    flex: 2;
+}
+
+.card .image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.card .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 3px solid #003366;
+}
+
+.accra-info {
+    display: flex;
+    gap: 15px;
+    margin-top: 15px;
+    align-items: flex-start;
+}
+
+.accra-info .flag-container {
+    text-align: center;
+    flex-shrink: 0;
+}
+
+.accra-info .flag-container img {
+    width: 80px;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin-bottom: 8px;
+}
+
+.card ul li a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.card ul li a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+footer {
+    background-color: hsl(210, 100%, 20%);
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9em;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0,0,0,0.2);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 767px) {
+    header {
+        padding: 10px;
+    }
+
+    #course-title {
+        font-size: 1.5em;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .card .content-wrapper {
+        flex-direction: column;
+    }
+
+    .card .image-content {
+        order: -1;
+    }
+
+    .accra-info {
+        flex-direction: column;
+    }
+}
