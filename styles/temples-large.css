@@ -1,0 +1,45 @@
+/* Add/Modify these sections in your existing temples-large.css */
+
+@media (min-width: 768px) { /* Adjust breakpoint as needed */
+
+    /* ... (your existing large view header and nav rules) ... */
+
+    /* CSS Grid for main content in larger views */
+    .temple-grid {
+        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+        /* You could also use: grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+           if you want more flexibility in column count based on viewport width.
+           For a strict 3-column like the screenshot, repeat(3, 1fr) is direct. */
+        gap: 30px; /* More space between grid items on larger screens */
+    }
+
+    .temple-grid figure {
+        padding: 20px; /* More padding in larger cards */
+    }
+
+    .temple-grid img {
+        height: 200px; /* Fixed height for consistent image size in the grid */
+        object-fit: cover; /* Ensures image covers the area without distortion */
+        width: 100%; /* Image takes full width of its container within the figure */
+    }
+
+    /* ... (your existing large view footer rules) ... */
+}
+
+#menu{
+    display: none;
+}
+
+	header {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	nav ul {
+		justify-content: flex-end;
+		flex-direction: row;
+	}
+	nav a {
+		flex: 1 1 100%;
+	}
+
