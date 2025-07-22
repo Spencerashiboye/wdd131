@@ -57,16 +57,20 @@
 
     /* Weather Card Specifics for Large Screens */
     .weather-icon-large {
-        display: inline-block; /* Show large weather icon */
-        margin-left: 10px; /* Space from "Weather" text */
-        vertical-align: middle; /* Align with text */
-        font-size: 1.8rem; /* Size of the emoticon */
-        /* Removed background-image as emoticon is now in HTML */
+        display: inline-block; /* Ensure it's treated as a block for ::after */
+        /* No specific styling for the span itself, just to contain the pseudo-element */
     }
 
-    /* .weather-icon-mobile {  */
-         /* display: none; Hide mobile weather icon on large screens */
-    /* } */
+    .weather-icon-large::after { /* Using ::after pseudo-element */
+        content: " ⛅"; /* Emoticon with a space before it */
+        font-size: 1.8rem; /* Size of the emoticon */
+        vertical-align: middle; /* Align with text */
+        margin-left: 5px; /* Adjust spacing as needed */
+    }
+
+    .weather-icon-mobile {
+        display: none; /* Hide mobile weather icon on large screens */
+    }
 
     .weather-card .weather-details p {
         font-size: 1.1rem;
