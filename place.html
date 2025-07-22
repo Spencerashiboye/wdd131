@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131: Dynamic Web Fundamentals - Ashiboye Spencer</title>
+        <meta name="description" content="WDD 131 - Dynamic Web Fundamentals by Ashiboye Spencer">
+        <meta name="author" content="Ashiboye Spencer">
+        <link rel="stylesheet" href="styles/place.css">
+        <link rel="stylesheet" href="styles/place-large.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="scripts/place.js" defer></script>
+    </head>
+    <body>
+    <header>
+        <h1>Welcome to Ghana</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source media="(min-width: 768px)" srcset="images/market.small.webp">
+                <img src="images/pexels-khanhhoangminh-8613913-min.webp" alt="Vibrant market scene in Ghana" width="1200" height="800">
+            </picture>
+        </section>
+
+        <section class="info-grid">
+            <div class="info-card">
+                <h3>Attractions</h3>
+                <ul>
+                    <li>Kakum National Park</li>
+                    <li>Cape Coast Castle</li>
+                    <li>Mole National Park</li>
+                    <li>Kwame Nkrumah Mausoleum</li>
+                </ul>
+            </div>
+            <div class="info-card weather-card">
+                <h3>Weather <span class="weather-icon-large">⛅</span></h3>
+                <div class="weather-details">
+                    <p>Temperature: <span id="temperature">28</span>°C</p>
+                    <p>Wind Speed: <span id="wind-speed">15</span> km/h</p>
+                    <p>Wind Chill: <span id="wind-chill">N/A</span></p>
+                    <div class="weather-icon-mobile">
+                        <img src="images/cloud-sun-fill.svg" alt="Cloudy weather icon">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Explore Ghana</p>
+        <p>Last Modified: <span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

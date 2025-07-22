@@ -1,0 +1,157 @@
+/* Universal Styles */
+:root {
+    --primary-color: #006B3F; /* Ghana Flag Green */
+    --secondary-color: #f4f4f4; /* Light grey for backgrounds */
+    --text-color: #333; /* Dark grey for general text */
+    --heading-color: #1a1a1a; /* Even darker grey for headings */
+    --border-color: #ddd; /* Light grey for borders */
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+h1, h3 {
+    font-family: 'Roboto', serif;
+    color: var(--heading-color);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    background-color: var(--primary-color); /* Applied Ghana Green */
+    color: white;
+    padding: 1rem 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    color: white;
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+/* Main Content */
+main {
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden; /* Ensures image doesn't overflow */
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    border-radius: 8px; /* Slightly rounded corners for the image */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Info Grid (for Attractions and Weather) */
+.info-grid {
+    display: flex;
+    flex-direction: column; /* Stacks cards vertically on mobile */
+    gap: 1rem; /* Space between cards */
+}
+
+.info-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+    border: 1px solid var(--border-color);
+}
+
+.info-card h3 {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    margin-top: 0;
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 10px;
+}
+
+.info-card ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+}
+
+.info-card ul li {
+    padding: 8px 0;
+    border-bottom: 1px dashed var(--border-color); /* Dashed line for list items */
+}
+
+.info-card ul li:last-child {
+    border-bottom: none; /* No border for the last item */
+}
+
+/* Weather Card Specifics */
+.weather-card .weather-details {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.weather-card p {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--border-color);
+}
+
+.weather-card p:last-of-type {
+    border-bottom: none;
+}
+
+.weather-card p span {
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.weather-icon-large {
+    display: none; /* Hide large weather icon on mobile */
+}
+
+.weather-icon-mobile {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.weather-icon-mobile img {
+    width: 60px; /* Adjust size as needed for mobile */
+    height: auto;
+    vertical-align: middle;
+}
+
+/* Footer */
+footer {
+    background-color: var(--primary-color); /* Applied Ghana Green */
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+/* Basic accessibility improvements */
+img {
+    max-width: 100%;
+    height: auto;
+}

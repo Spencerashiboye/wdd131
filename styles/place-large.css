@@ -1,0 +1,80 @@
+/* Large Screen Styles (Desktop and Tablet Landscape) */
+
+@media (min-width: 768px) { /* Adjust breakpoint as needed for your design */
+    /* Header */
+    header h1 {
+        font-size: 2.5rem; /* Larger font for header on larger screens */
+    }
+
+    /* Main Layout for Large Screens */
+    main {
+        padding: 1.5rem 3rem; /* More padding on larger screens */
+        max-width: 1200px; /* Max width for content to prevent it from stretching too wide */
+        margin: 0 auto; /* Center the main content */
+    }
+
+    /* Hero Section - Adjusting for the large image and side cards */
+    .hero {
+        position: relative;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for the hero area */
+        align-items: center;
+        gap: 2rem; /* Space between image and cards */
+        margin-bottom: 2rem;
+    }
+
+    .hero picture {
+        grid-column: 1 / span 2; /* Image spans both columns initially */
+        grid-row: 1; /* Image in the first row */
+    }
+
+    .hero img {
+        height: 500px; /* Fixed height for large image */
+        object-fit: cover; /* Ensure image covers the area without distortion */
+        width: 100%;
+    }
+
+    /* Info Grid for Large Screens */
+    .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Two columns for cards below the hero */
+        gap: 2rem; /* Space between the info cards */
+        margin-top: 1rem; /* Space below the hero section */
+    }
+
+    /* Individual Info Cards */
+    .info-card {
+        padding: 2rem; /* More padding on larger screens */
+    }
+
+    .info-card h3 {
+        font-size: 1.8rem;
+    }
+
+    .info-card ul li {
+        font-size: 1.1rem;
+    }
+
+    /* Weather Card Specifics for Large Screens */
+    .weather-icon-large {
+        display: inline-block; /* Show large weather icon */
+        margin-left: 10px; /* Space from "Weather" text */
+        vertical-align: middle; /* Align with text */
+        font-size: 1.8rem; /* Size of the emoticon */
+        /* Removed background-image as emoticon is now in HTML */
+    }
+
+    /* .weather-icon-mobile {  */
+         /* display: none; Hide mobile weather icon on large screens */
+    /* } */
+
+    .weather-card .weather-details p {
+        font-size: 1.1rem;
+    }
+
+    /* Footer */
+    footer {
+        padding: 1.5rem;
+        font-size: 1rem;
+    }
+}
