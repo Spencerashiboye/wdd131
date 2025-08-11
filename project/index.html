@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpot" content="width=device-width, initial-scale=1.0">
+        <title>WDD 131: Dynamic Web Fundamentals - Ashiboye Spencer</title>
+        <meta name="discription" content="Discover Ghana Culture website">
+        <meta name="author" content="Ashiboye Spencer">
+        <link rel="stylesheet" href="styles/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+        <script src="scripts/index.js" defer></script>
+    </head>
+    <body>
+        <header>
+            <div class="logo">Discover Ghana Culture</div>
+            <nav>
+                <ul>
+                    <li><a href="#">Festivals</a></li>
+                    <li><a href="#">Attire</a></li>
+                    <li><a href="#">Music & Dance</a></li>
+                    <li><a href="#">Food</a></li>
+                    <li><a href="#">Landmark</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-content">
+                    <h1>Welcome to Discover Ghana Culture</h1>
+                    <p>Explore the vibrant traditions, music, and history of Ghana.</p>
+                </div>
+            </section>
+            <section class="welcome-message">
+                <h2>A Journey into the Heart of Ghana</h2>
+                <p>The culture of Ghana is a vibrant tapestry of tradition, history, and modern life.
+                From the intricate patterns of Kente cloth to the rhythm of traditional dances, our site
+                is a gateway to understanding the soul of this West African nation.</p>
+            </section>
+            <section class="content-grid">
+                <div class="mian-article">
+                    <h3 id="festivals">Featured Festivals: Homowo Festival</h3>
+                    <img src="images/homowo-festival.jpg" alt="Image of the Homowo Festival" width="300">
+                    <p>The Homowo festival, celebrated by the Ga people, is a vibrant annual event.
+                    It translates to "hooting at hunger," commemorating a period of great famine
+                    in the history of the Ga state. The festival features traditional drumming,
+                    dancing, and a symbolic sprinkling of a special meal called *Kpokpoi*.</p>
+                </div>
+                <div class="sidebar">
+                    <h3 id="attire">Kente Cloth: A Woven Story</h3>
+                    <img src="images/kente-cloth-weaving.webp" alt="Image of a Kente cloth weaver" width="300">
+                    <p> Kente cloth is more than just fabric; it's a visual representation of history,
+                    philosophy, and social values. Each color and pattern has a specific meaning.
+                    For example, gold represents wealth, green represents vegetation, and red signifies sacrifice.</p>
+                </div>
+                <div class="sidebar">
+                    <h3>Did You Know?</h3>
+                    <p>Ghana is known as the "Gateway to Africa" due to its welcoming atmosphere and
+                    historical significance, particularly as a key point in the transatlantic slave trade.</p>
+                </div>
+            </section>
+            <section class="form-section">
+                <h3>Contact Us</h3>
+                <form id="contactForm">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="name" required>
+
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message" required></textarea>
+
+                    <button type="submit">Send</button>
+                </form>
+            </section>
+        </main>
+        <footer>
+           <p>&copy; <span id="currentyear"></span> 💚Ashiboye Spencer, Ghana💚 . All rights reserved.</p>
+           <p id="lastmodified"></p>  
+        </footer>
+    </body>
+</html>
