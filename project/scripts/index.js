@@ -20,6 +20,12 @@ function handleContactForm(event) {
     return;
   }
 
+  
+  // Save to localStorage
+  localStorage.setItem("contactName", name);
+  localStorage.setItem("contactEmail", email);
+  localStorage.setItem("contactMessage", message);
+
   // Feedback to the user
   alert(`Thank you, ${name}! Your message has been received.`);
 
@@ -27,8 +33,22 @@ function handleContactForm(event) {
   document.getElementById("contactForm").reset();
 }
 
+// Function to load saved data from localStorage
+function loadSavedContact() {
+  const savedName = localStorage.getItem("contactName");
+  const savedEmail = localStorage.getItem("contactEmail");
+  const savedMessage = localStorage.getItem("contactMessage");
+
+  if (savedName || savedEmail || savedMessage) {
+    document.getElementById("name").value = savedName || "";
+    document.getElementById("email").value = savedEmail || "";
+    document.getElementById("message").value = savedMessage || "";
+    console.log("Form pre-filled with saved contact info.");
+  }
+}
 // Attach the function to the form
 document.addEventListener("DOMContentLoaded", () => {
+  loadSavedContact(); 
   const form = document.getElementById("contactForm");
   form.addEventListener("submit", handleContactForm);
 });
