@@ -179,8 +179,9 @@ main {
 }
 
 .card ul li a {
-    color: var(--highlight);
-    text-decoration: none;
+    color: #1d6f63;
+    text-decoration: underline;
+    text-underline-offset: 0.15em;
     font-weight: 600;
     transition: color 0.2s ease, text-decoration 0.2s ease;
 }
