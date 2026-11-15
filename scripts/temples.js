@@ -16,26 +16,34 @@ document.addEventListener('DOMContentLoaded', function() {
         currentYearElement.textContent = new Date().getFullYear();
     }
 
-    // HAMBURGER MENU JS (New/Updated part)
     const hamButton = document.querySelector('#menu');
-    const navigation = document.querySelector('nav ul');
+    const navigation = document.querySelector('#primary-navigation');
 
     if (hamButton && navigation) {
         hamButton.addEventListener('click', () => {
-            // Toggle the 'open' class on the navigation list
-            navigation.classList.toggle('open');
-            // Toggle the 'open' class on the button itself to change the icon
-            hamButton.classList.toggle('open');
+            const isOpen = navigation.classList.toggle('open');
+            hamButton.classList.toggle('open', isOpen);
+            hamButton.setAttribute('aria-expanded', String(isOpen));
+            hamButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
         });
 
-        // Optional: Close menu when a navigation link is clicked
         navigation.querySelectorAll('a').forEach(item => {
             item.addEventListener('click', () => {
-                if (navigation.classList.contains('open')) {
-                    navigation.classList.remove('open');
-                    hamButton.classList.remove('open');
-                }
+                navigation.classList.remove('open');
+                hamButton.classList.remove('open');
+                hamButton.setAttribute('aria-expanded', 'false');
+                hamButton.setAttribute('aria-label', 'Open navigation menu');
             });
+        });
+
+        document.addEventListener('keydown', event => {
+            if (event.key === 'Escape' && navigation.classList.contains('open')) {
+                navigation.classList.remove('open');
+                hamButton.classList.remove('open');
+                hamButton.setAttribute('aria-expanded', 'false');
+                hamButton.setAttribute('aria-label', 'Open navigation menu');
+                hamButton.focus();
+            }
         });
     }
 });
