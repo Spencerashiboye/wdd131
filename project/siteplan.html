@@ -2,70 +2,146 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <meta name="viewpot" content="width=device-width, initial-scale=1.0">
-        <title>WDD 131: Dynamic Web Fundamentals - Ashiboye Spencer</title>
-        <meta name="discription" content="Site plan for Discover Ghana Culture website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Discover Ghana Culture | Website Plan</title>
+        <meta name="description" content="The website plan for Discover Ghana Culture, an introduction to Ghanaian traditions, festivals, food, and landmarks.">
         <meta name="author" content="Ashiboye Spencer">
-        <!-- <link rel="stylesheet" href="styles/styles.css"> -->
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="styles/siteplan.css">
         <script src="scripts/siteplan.js" defer></script>
     </head>
     <body>
-        <header>
-            <h1>Site Plan: Discover Ghana Culture </h1>
-            <nav>
+        <header class="site-header">
+            <a class="brand" href="#overview" aria-label="Discover Ghana Culture site plan home">
+                <span class="brand-mark" aria-hidden="true">✦</span>
+                <span class="brand-copy">
+                    <span class="eyebrow">Website Planning Document</span>
+                    <span class="brand-name">Discover Ghana Culture</span>
+                </span>
+            </a>
+            <nav aria-label="Site plan sections">
                 <ul>
-                    <li><a href="#">Overview</a></li>
-                    <li><a href="#">Purpose</a></li>
-                    <li><a href="#">Audience</a></li>
-                    <li><a href="#">Sitemap</a></li>
-                    <li><a href="#">Branding</a></li>
-                    <li><a href="#">Content</a></li>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#purpose">Purpose</a></li>
+                    <li><a href="#scenarios">Scenarios</a></li>
+                    <li><a href="#branding">Branding</a></li>
+                    <li><a href="#wireframes">Wireframes</a></li>
                 </ul>
             </nav>
         </header>
+
         <main>
-            <section id="overview">
-                <h2>1. Overview</h2>
-                <h3>Project Name: Discover Ghana Culture</h3>
-                <p><strong>Website URL:</strong>[]</p>
-                <p>This document outlines the plan for the  website, detailing its purpose, target audience, content structure, and visual branding.</p>
+            <section id="overview" class="plan-section">
+                <h2>Site Name</h2>
+                <p><strong>Discover Ghana Culture</strong> introduces visitors to Ghana's traditions, creative arts, and history. The name makes the site's subject clear and welcomes curious readers.</p>
+                <p>Possible domain: <code>discoverghanaculture.org</code></p>
             </section>
-            <section id="purpose">
-                <h2>2. Purpose</h2>
-                <p>The purpose of this site is to serve as an online hub for anyone interested in learning about Ghana’s rich cultural identity. It will feature informational sections on major festivals, traditional attire, music and dance, food, and historic landmarks. The site will educate students, tourists, and anyone curious about Ghanaian culture by providing meaningful insights, images, and resources in an organized and visually appealing way.</p>
+
+            <section id="purpose" class="plan-section">
+                <h2>Site Purpose</h2>
+                <p>The site is an inviting, easy-to-explore guide to Ghanaian culture. It shares stories and visual highlights about festivals, traditional attire, music and dance, food, and historic landmarks, helping students and travelers find meaningful background in one place.</p>
+                <h3>Intended Audience</h3>
+                <p>Students, travelers, and anyone interested in learning about Ghana's cultural heritage.</p>
             </section>
-            <section id="scenarios">
-                <h2>3. Scenarios</h2>
-                <ul>
+
+            <section id="scenarios" class="plan-section">
+                <h2>Scenarios</h2>
+                <ul class="scenario-list">
                     <li>What are the major traditional festivals and celebrations in Ghana?</li>
-                    <li>Where can tourists experience authentic Ghanaian music and dance performance?</li>
+                    <li>Where can I experience authentic Ghanaian music and dance?</li>
+                    <li>What do the colors and patterns in Kente cloth represent?</li>
+                    <li>Which historic landmarks should I learn about before visiting Ghana?</li>
                 </ul>
             </section>
-            <section id="color-schema">
-                <h2>4. Color Schema</h2>
-                <div class="colors">
-                   <div class="color-box primary-color" style="background-color: #EF3340;">#EF3340 (Red - Primary)</div>
-                    <div class="color-box secondary-color" style="background-color: #009739;">#009739 (Green - Secondary)</div>
-                    <div class="color-box accent-color" style="background-color: #FFCC00;">#FFCC00 (Gold/Yellow - Accent)</div>
-                    <div class="color-box dark-color" style="background-color: #000000; color: #FFFFFF;">#000000 (Black - Dark)</div>
-                    <div class="color-box light-color" style="background-color: #F8F8F8; color: #333;">#F8F8F8 (Light Gray - for backgrounds)</div> 
+
+            <section id="sitemap" class="plan-section">
+                <h2>Site Structure</h2>
+                <p>The homepage introduces the culture guide and highlights its main topics. Topic links lead visitors to focused information about each part of Ghanaian culture.</p>
+                <ul class="topic-list" aria-label="Planned site topics">
+                    <li>Home</li>
+                    <li>Festivals</li>
+                    <li>Traditional Attire</li>
+                    <li>Music &amp; Dance</li>
+                    <li>Food</li>
+                    <li>Landmarks</li>
+                </ul>
+            </section>
+
+            <section id="branding" class="plan-section">
+                <h2>Color Schema</h2>
+                <p>The palette pairs an earthy green header with a warm, readable background and terracotta accents.</p>
+                <div class="color-palette">
+                    <div class="color-card">
+                        <span class="color-swatch forest"></span>
+                        <span class="color-details"><strong>#2F5D3A</strong><span>Header, footer, headings</span></span>
+                    </div>
+                    <div class="color-card">
+                        <span class="color-swatch cream"></span>
+                        <span class="color-details"><strong>#FAF6EC</strong><span>Page background</span></span>
+                    </div>
+                    <div class="color-card">
+                        <span class="color-swatch terracotta"></span>
+                        <span class="color-details"><strong>#A8481F</strong><span>Accents, buttons, links</span></span>
+                    </div>
+                    <div class="color-card">
+                        <span class="color-swatch ink"></span>
+                        <span class="color-details"><strong>#24301F</strong><span>Paragraph text</span></span>
+                    </div>
+                </div>
+
+                <h2 class="subsection-title">Typography</h2>
+                <p><strong>Headings:</strong> Roboto, bold. A strong, clean display style for page titles and section headings.</p>
+                <p><strong>Body text:</strong> Open Sans. Comfortable, clear reading for stories and descriptions.</p>
+                <p class="type-sample">Explore the vibrant traditions and stories of Ghana.</p>
+            </section>
+
+            <section id="wireframes" class="plan-section">
+                <h2>Homepage Wireframes</h2>
+                <p>These sketches show the planned homepage layout at wide and narrow screen sizes. The mobile layout stacks content for scrolling and keeps navigation easy to reach.</p>
+                <div class="wireframe-grid">
+                    <figure class="wireframe-figure">
+                        <figcaption>Desktop</figcaption>
+                        <div class="wireframe desktop-wireframe" aria-label="Desktop homepage wireframe">
+                            <div class="wf-browser-bar"><span></span><span></span><span></span><span class="wf-address"></span></div>
+                            <div class="wf-header">
+                                <span class="wf-logo">LOGO</span>
+                                <span class="wf-nav">FESTIVALS&nbsp;&nbsp; ATTIRE&nbsp;&nbsp; MUSIC&nbsp;&nbsp; FOOD&nbsp;&nbsp; LANDMARKS</span>
+                            </div>
+                            <div class="wf-hero"><span>HERO IMAGE</span><strong>Welcome to Ghana</strong><span>Culture, tradition, and history</span></div>
+                            <div class="wf-intro"><strong>A Journey into the Heart of Ghana</strong><span>Short introduction to Ghanaian culture</span></div>
+                            <div class="wf-content-row">
+                                <div class="wf-feature"><span class="wf-image">IMAGE</span><strong>Featured Festival</strong><span>Festival story and details</span></div>
+                                <div class="wf-feature"><span class="wf-image">IMAGE</span><strong>Kente &amp; Attire</strong><span>Patterns, meaning, and craft</span></div>
+                                <div class="wf-feature"><span class="wf-image">IMAGE</span><strong>Explore More</strong><span>Music, food, and landmarks</span></div>
+                            </div>
+                            <div class="wf-contact">CONTACT / SIGN-UP FORM</div>
+                            <div class="wf-footer">FOOTER · LINKS · COPYRIGHT</div>
+                        </div>
+                    </figure>
+
+                    <figure class="wireframe-figure">
+                        <figcaption>Mobile</figcaption>
+                        <div class="wireframe mobile-wireframe" aria-label="Mobile homepage wireframe">
+                            <div class="wf-browser-bar"><span></span><span></span><span></span><span class="wf-address"></span></div>
+                            <div class="wf-header"><span class="wf-logo">LOGO</span><span class="wf-menu" aria-label="Menu icon"><span></span><span></span><span></span></span></div>
+                            <div class="wf-hero"><span>HERO IMAGE</span><strong>Welcome to Ghana</strong><span>Culture and tradition</span></div>
+                            <div class="wf-intro"><strong>A Journey into Ghana</strong><span>Short introduction</span></div>
+                            <div class="wf-feature"><span class="wf-image">FESTIVAL IMAGE</span><strong>Featured Festival</strong><span>Story and details</span></div>
+                            <div class="wf-feature"><span class="wf-image">KENTE IMAGE</span><strong>Kente &amp; Attire</strong><span>Craft and meaning</span></div>
+                            <div class="wf-feature"><span class="wf-image">CULTURE IMAGE</span><strong>Explore More</strong><span>Music, food, landmarks</span></div>
+                            <div class="wf-contact">CONTACT FORM</div>
+                            <div class="wf-footer">FOOTER</div>
+                        </div>
+                    </figure>
                 </div>
             </section>
-            <section id="typography">
-                <h2>5. Typography</h2>
-                <p><strong>Heading Font:</strong> 'Roboto', sans-serif (Example: H1, H2)</p>
-                <p style="font-family: 'Roboto', sans-serif; font-weight: 700; font-size: 2em;">Example Heading Text</p>
-                <p><strong>Body Font:</strong> 'Open Sans', sans-serif (Example: Paragraphs, lists)</p>
-                <p style="font-family: 'Open Sans', sans-serif;">Example body text for readability and general content.</p>
-            </section>
-            <section id="content">
-                <h2>6. Wireframe</h2>
-            </section>
         </main>
+
         <footer>
-           <p>&copy; <span id="currentyear"></span> 💚Ashiboye Spencer, Ghana💚 . All rights reserved.</p>
-           <p id="lastmodified"></p> 
+            <p>&copy; <span id="currentyear"></span> Ashiboye Spencer, Ghana. All rights reserved.</p>
+            <p id="lastmodified"></p>
         </footer>
     </body>
 </html>
