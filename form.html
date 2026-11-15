@@ -9,7 +9,7 @@
         <link rel="stylesheet" href="styles/form.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
         <script src="scripts/forms.js" defer></script>
     </head>
     <body>
@@ -20,6 +20,7 @@
            <form action="review.html" method="get">
             <fieldset>
                 <legend>Product Name:</legend>
+                <label for="productName">Choose a product:</label>
                 <select name="productName" id="productName" required>
                     <option value="" disabled selected>Select a Product ...</option>
                 </select>
@@ -29,16 +30,16 @@
                     <input type="radio" id="rate1" name="rating" value="1" required>
 
                     <label for="rate2">☆☆</label>
-                    <input type="radio" id="rate2" name="rating" value="2">
+                    <input type="radio" id="rate2" name="rating" value="2" required>
 
                     <label for="rate3">☆☆☆</label>
-                    <input type="radio" id="rate3" name="rating" value="3">
+                    <input type="radio" id="rate3" name="rating" value="3" required>
 
                     <label for="rate4">☆☆☆☆</label>
-                    <input type="radio" id="rate4" name="rating" value="4">
+                    <input type="radio" id="rate4" name="rating" value="4" required>
 
                     <label for="rate5">☆☆☆☆☆</label>
-                    <input type="radio" id="rate5" name="rating" value="5">
+                    <input type="radio" id="rate5" name="rating" value="5" required>
                 </div>
 
                 <label for="installDate">Date of Installation:</label>
