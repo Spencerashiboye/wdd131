@@ -1,107 +1,101 @@
-/* Add/Modify these sections in your existing temples.css */
-
 main {
-    max-width: 960px; /* Limit main content width */
-    margin: 1rem auto; /* Center main content horizontally with some top/bottom margin */
+    max-width: 960px;
+    margin: 1rem auto;
     padding: 1rem;
+    color: #0b0563;
 }
 
-main h2 { /* The "Home" heading in your screenshot */
+main h2 {
     text-align: center;
     margin-bottom: 1.5rem;
-    color: var(--primary-color); /* Assuming you want primary color for headings */
-    font-size: 2rem; /* Adjusted for prominent "Home" title */
+    font-size: 2rem;
 }
 
 .temple-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Single column for mobile */
-    gap: 20px; /* Space between grid items */
-    padding: 10px; /* Some internal padding for the grid container */
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 10px;
 }
 
 .temple-grid figure {
-    margin: 0; /* Remove default figure margin */
-    padding: 15px; /* Padding inside each figure (around image and caption) */
-    background-color: #fff; /* White background for each image card */
-    border: 1px solid rgba(0, 0, 0, 0.1); /* Subtle border */
-    border-radius: 8px; /* Slightly rounded corners for the cards */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
-    text-align: center; /* Center the image and caption */
-    display: flex; /* Make figure a flex container */
-    flex-direction: column; /* Stack image and figcaption vertically */
-    align-items: center; /* Center content horizontally within the figure */
-    justify-content: center; /* Center content vertically if space allows */
+    margin: 0;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #0000001a;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px #0000001a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .temple-grid img {
-    max-width: 100%; /* Ensure image fits within its container */
-    height: auto; /* Maintain aspect ratio */
-    display: block; /* Remove extra space below image */
-    border-radius: 4px; /* Slightly rounded corners for the images */
-    margin-bottom: 10px; /* Space between image and caption */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); /* Lighter shadow for the image itself */
-    object-fit: cover; /* Ensures image covers the area, cropping if necessary */
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px #0000000d;
+    object-fit: cover;
 }
 
 .temple-grid figcaption {
     font-size: 1.1rem;
     font-weight: bold;
-    color: var(--primary-color); /* Using your defined primary color */
-    padding-bottom: 5px; /* Little padding at the bottom of the caption */
-}
-header {
-	background-color: #0b0563;
-    color: #eee;
-	display: grid;
-	grid-gap: 1rem;
-	padding: 20px;
-	border: 1px solid rgba(0, 0, 0, 0.1);
-	box-shadow: 0 0 30px #333;
+    padding-bottom: 5px;
 }
 
 header,
-main {
-  margin: 0 auto;
+footer {
+    background-color: #0b0563;
+    color: #eeeeee;
+    box-shadow: 0 0 30px #333333;
+}
+
+header {
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    border: 1px solid #0000001a;
+    margin: 0 auto;
 }
 
 h1 {
-  font-size: 2rem;
+    font-size: 2rem;
 }
 
 nav ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-}
-
-nav ul.open{
+    list-style: none;
     display: flex;
+    flex-direction: column;
 }
 
 nav a {
-  display: block;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-  text-decoration: none;
-  font-size: larger;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+    font-size: larger;
 }
 
 nav a:hover {
-  background-color: #eee;
-  color: #000;
+    background-color: #eeeeee;
+    color: #000000;
 }
 
 .active {
-  color: yellow;
+    color: #ffff00;
 }
 
 #menu {
-    background: none;
+    background: #00000000;
     border: none;
     font-size: 2rem;
-    color:white;
+    color: #ffffff;
     cursor: pointer;
     display: block;
     padding: 5px 10px;
@@ -113,15 +107,11 @@ nav a:hover {
 }
 
 #menu.open::before {
-    content:"X";
+    content: "X";
 }
 
-footer{
-    background-color: #0b0563;
-    color: #eee;
+footer {
     text-align: center;
-    padding:20px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 0 0 30px #333;
-
+    padding: 20px;
+    border: 1px solid #00000080;
 }

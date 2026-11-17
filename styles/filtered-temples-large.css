@@ -1,39 +1,34 @@
-/* Add/Modify these sections in your existing temples-large.css */
-
 @media (min-width: 768px) {
     .temple-grid {
-        grid-template-columns: repeat(3, 1fr); /* Three equal columns */
-       
-        gap: 30px; /* More space between grid items on larger screens */
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
     }
 
     .temple-grid figure {
-        padding: 20px; /* More padding in larger cards */
+        padding: 20px;
     }
 
     .temple-grid img {
-        height: 200px; /* Fixed height for consistent image size in the grid */
-        object-fit: cover; /* Ensures image covers the area without distortion */
-        width: 100%; /* Image takes full width of its container within the figure */
+        height: 200px;
+        width: 100%;
     }
 
-    
+    #menu {
+        display: none;
+    }
+
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    nav ul {
+        justify-content: flex-end;
+        flex-direction: row;
+    }
+
+    nav a {
+        flex: 1 1 100%;
+    }
 }
-
-    #menu{
-    display: none;
-    }
-
-	header {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-	}
-	nav ul {
-		justify-content: flex-end;
-		flex-direction: row;
-	}
-	nav a {
-		flex: 1 1 100%;
-	}
-
