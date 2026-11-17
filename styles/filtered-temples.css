@@ -1,101 +1,107 @@
+/* Add/Modify these sections in your existing temples.css */
+
 main {
-    max-width: 960px;
-    margin: 1rem auto;
+    max-width: 960px; 
+    margin: 1rem auto; 
     padding: 1rem;
-    color: #0b0563;
 }
 
-main h2 {
+main h2 { 
     text-align: center;
     margin-bottom: 1.5rem;
+    color: var(--primary-color); 
     font-size: 2rem;
 }
 
 .temple-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+    grid-template-columns: 1fr; 
+    gap: 20px; 
     padding: 10px;
 }
 
 .temple-grid figure {
-    margin: 0;
-    padding: 15px;
-    background-color: #ffffff;
-    border: 1px solid #0000001a;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px #0000001a;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 0; 
+    padding: 15px; 
+    background-color: #fff; 
+    border: 1px solid rgba(0, 0, 0, 0.1); 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: center; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
 }
 
 .temple-grid img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    border-radius: 4px;
-    margin-bottom: 10px;
-    box-shadow: 0 2px 4px #0000000d;
-    object-fit: cover;
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    border-radius: 4px; 
+    margin-bottom: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05); 
+    object-fit: cover; 
 }
 
 .temple-grid figcaption {
     font-size: 1.1rem;
     font-weight: bold;
-    padding-bottom: 5px;
+    color: var(--primary-color); /* Using your defined primary color */
+    padding-bottom: 5px; /* Little padding at the bottom of the caption */
+}
+header {
+	background-color: #0b0563;
+    color: #eee;
+	display: grid;
+	grid-gap: 1rem;
+	padding: 20px;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 0 30px #333;
 }
 
 header,
-footer {
-    background-color: #0b0563;
-    color: #eeeeee;
-    box-shadow: 0 0 30px #333333;
-}
-
-header {
-    display: grid;
-    gap: 1rem;
-    padding: 20px;
-    border: 1px solid #0000001a;
-    margin: 0 auto;
+main {
+  margin: 0 auto;
 }
 
 h1 {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 nav ul {
-    list-style: none;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul.open{
     display: flex;
-    flex-direction: column;
 }
 
 nav a {
-    display: block;
-    color: #ffffff;
-    text-align: center;
-    padding: 1rem;
-    text-decoration: none;
-    font-size: larger;
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+  text-decoration: none;
+  font-size: larger;
 }
 
 nav a:hover {
-    background-color: #eeeeee;
-    color: #000000;
+  background-color: #eee;
+  color: #000;
 }
 
 .active {
-    color: #ffff00;
+  color: yellow;
 }
 
 #menu {
-    background: #00000000;
+    background: none;
     border: none;
     font-size: 2rem;
-    color: #ffffff;
+    color:white;
     cursor: pointer;
     display: block;
     padding: 5px 10px;
@@ -107,11 +113,15 @@ nav a:hover {
 }
 
 #menu.open::before {
-    content: "X";
+    content:"X";
 }
 
-footer {
+footer{
+    background-color: #0b0563;
+    color: #eee;
     text-align: center;
-    padding: 20px;
-    border: 1px solid #00000080;
+    padding:20px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 30px #333;
+
 }
